@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pagamento de Produtos</title>
+    <link rel="icon" href="imagens/icone.png" type="image/png"> 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .payment-container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .product-card {
+            margin-bottom: 20px;
+        }
+        .navbar-icon img {
+            width: 20px; 
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="navbar-icon">
+            <img src="imagens/icone.png" alt="Ícone da Navegação">
+        </div>
+        <a class="navbar-brand" href="pagina_inicial.html">Phone Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="pagina_inicial.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina_produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagamentos.html">Pagamento</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container payment-container">
+        <h2 class="text-center mb-4">Pagamento de Produtos</h2>
+        <div class="row">    
+            <div class="col-md-6">
+                <h4>Resumo do Pedido</h4>
+                <div class="product-card">
+                    <img src="imagens/iphone_15.jpg" class="img-fluid" alt="Produto 1">
+                    <h5>Iphone 15</h5>
+                    <p>Novo Iphone 15 pro max</p>
+                    <p>Preço: R$10.900,99</p>
+                </div>
+                <h5>Total: R$10.900,99</h5>
+            </div>
+            <div class="col-md-6">
+                <h4>Detalhes do Pagamento</h4>
+                <form>
+                    <!-- Cartão de Crédito -->
+                    <div class="form-group">
+                        <label for="cardNumber">Número do Cartão:</label>
+                        <input type="text" class="form-control" id="cardNumber" placeholder="**** **** **** ****" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="expirationDate">Data de Expiração:</label>
+                            <input type="text" class="form-control" id="expirationDate" placeholder="MM/AA" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="***" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardHolderName">Nome no Cartão:</label>
+                        <input type="text" class="form-control" id="cardHolderName" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Pagar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Rodapé -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <span class="text-muted text-white">© 2023 Phone Store</span>
+        </div>
+    </footer>
+    <!-- Bootstrap JS e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

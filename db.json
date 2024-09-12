@@ -1,0 +1,40 @@
+{
+  "produtos": [
+      {
+          "id": 1,
+          "nome": "Samsung A34",
+          "descricao": "A34 por apenas R$ 4.600,00",
+          "imagem": "https://m.media-amazon.com/images/I/51Vx3vZWxoL._AC_UL320_.jpg"
+      },
+      {
+          "id": 2,
+          "nome": "Xiaomi Red-minot",
+          "descricao": "Xiaomi Red-minot última geração por apenas R$ 1.850,00",
+          "imagem": "https://m.media-amazon.com/images/I/61zUVaOpvhL._AC_UL320_.jpg"
+      },
+      {
+          "id": 3,
+          "nome": "Asus",
+          "descricao": "Celular Asus nova geração por apenas R$ 550,00",
+          "imagem": "https://m.media-amazon.com/images/I/513DQGmivPL._AC_UL320_.jpg"
+      },
+      {
+          "id": 4,
+          "nome": "Motorola G53",
+          "descricao": "G53 última geração por apenas R$ 950,00",
+          "imagem": "https://m.media-amazon.com/images/I/51wLs4+62SL._AC_UL320_.jpg"
+      },
+      {
+          "id": 5,
+          "nome": "Iphone 15",
+          "descricao": "Iphone 15 por apenas R$ 10.850,00",
+          "imagem": "https://m.media-amazon.com/images/I/416MG51rNgL._AC_UL320_.jpg"
+      },
+      {
+          "id": 6,
+          "nome": "Lenovo",
+          "descricao": "Lenovo última geração por apenas R$ 550,00",
+          "imagem": "https://m.media-amazon.com/images/I/41XIxIfipQL._AC_UL320_.jpg"
+      }
+  ]
+}
