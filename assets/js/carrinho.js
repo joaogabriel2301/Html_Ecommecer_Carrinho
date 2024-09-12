@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let totalQuantidade = 0;
 
     function atualizarCarrinho() {
-        carrinhoContainer.innerHTML = ""; // Limpa o carrinho antes de atualizar
+        carrinhoContainer.innerHTML = ""; 
         total = 0;
         totalQuantidade = 0;
 
@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 carrinhoContainer.appendChild(produtoDiv);
 
-                // Calcular total
                 total += parseFloat(produto.preco.replace('R$', '').replace('.', '').replace(',', '.')) * produto.quantidade;
                 totalQuantidade += produto.quantidade;
             });
@@ -37,25 +36,23 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
             carrinhoContainer.appendChild(totalDiv);
 
-            // Adicionar evento de remover
             const botoesRemover = document.querySelectorAll(".btn-remover");
             botoesRemover.forEach(botao => {
                 botao.addEventListener("click", function () {
                     const index = this.dataset.index;
 
-                    // Diminuir a quantidade do produto
                     if (carrinho[index].quantidade > 1) {
-                        carrinho[index].quantidade -= 1; // Reduz a quantidade
+                        carrinho[index].quantidade -= 1; 
                     } else {
-                        carrinho.splice(index, 1); // Remove o produto se a quantidade chegar a zero
+                        carrinho.splice(index, 1); 
                     }
 
-                    localStorage.setItem("carrinho", JSON.stringify(carrinho)); // Atualiza o localStorage
-                    atualizarCarrinho(); // Atualiza a visualização do carrinho
+                    localStorage.setItem("carrinho", JSON.stringify(carrinho)); 
+                    atualizarCarrinho(); 
                 });
             });
         }
     }
 
-    atualizarCarrinho(); // Chama a função para inicializar o carrinho
+    atualizarCarrinho(); 
 });
